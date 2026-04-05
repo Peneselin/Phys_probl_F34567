@@ -5,20 +5,19 @@
 using namespace std;
 
 int main() {
-    // Фізичні константи
-    const double h = 6.626e-34;        // Стала Планка (Дж*с)
-    const double e_charge = 1.602e-19; // Елементарний заряд (Кл)
-
-    double r = 10.0e-3;            // Радіус у метрах (10 мм)
-    double B = 2.0e-3;             // Магнітна індукція у Теслах (2 мТл)
-    double q_alpha = 2 * e_charge; // Заряд альфа-частинки (2 елементарні заряди)
     
-    // Обчислення імпульсу (p = qBr) та довжини хвилі (lambda = h/p)
+    const double h = 6.626e-34;        
+    const double e_charge = 1.602e-19; 
+
+    double r = 10.0e-3;            
+    double B = 2.0e-3;            
+    double q_alpha = 2 * e_charge; 
+    
+    
     double p = q_alpha * B * r;
     double lambda = h / p;
     
-    cout << "--- Задача 17.9 ---" << endl;
-    cout << "Довжина хвилі де Бройля для альфа-частинки: " << scientific << lambda << " м" << endl;
+    cout << "Р”РѕРІР¶РёРЅР° С…РІРёР»С– РґРµ Р‘СЂРѕР№Р»СЏ РґР»СЏ Р°Р»СЊС„Р°-С‡Р°СЃС‚РёРЅРєРё: " << scientific << lambda << " Г¬" << endl;
     
     return 0;
 }
