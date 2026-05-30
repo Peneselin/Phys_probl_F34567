@@ -1,12 +1,13 @@
 ﻿//7.81. При ізотермічному процесі газ отримав 314 Дж тепла. Обчисліть зміну внутрішньої енергії газу та виконану ним роботу.
 
 #include <iostream>
+#include <clocale>
 
 using namespace std;
 
 int main()
 {
-    system("chcp 1251 > nul");
+    setlocale(LC_CTYPE, "ukr");
 
     double Q;
 
