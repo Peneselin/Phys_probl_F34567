@@ -1,11 +1,12 @@
 ﻿//17.9. Знайдіть довжину хвилі де Бройля для альфа-частинки, яка рухається по колу з радіусом 10,0 мм в магнітному полі з індукцією 2,00 мТл.
 #include <iostream>
+#include <clocale>
 
 using namespace std;
 
 int main()
 {
-    system("chcp 1251 > nul");
+    setlocale(LC_CTYPE, "ukr");
 
     double h = 6.626e-34;       // Стала Планка 
     double q = 2.0 * 1.602e-19; // Заряд альфа-частинки
