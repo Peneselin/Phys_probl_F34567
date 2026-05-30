@@ -1,12 +1,13 @@
 ﻿//15.35. Визначте енергію, масу та імпульс фотона, якому відповідає довжина хвилі 380 нм.
 
 #include <iostream>
+#include <clocale>
 
 using namespace std;
 
 int main()
 {
-    system("chcp 1251 > nul");
+   setlocale(LC_CTYPE, "ukr");
 
     double h = 6.626e-34;   // Стала Планка
     double c = 3.0e8;       // Швидкість світла в вакуумі
