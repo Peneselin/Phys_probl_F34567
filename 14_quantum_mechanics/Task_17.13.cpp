@@ -1,11 +1,12 @@
 ﻿//17.13. За допомогою співвідношення невизначеностей оцініть мінімальну кінетичну енергію електрона, локалізованого в області розміром 0,10 нм.
 #include <iostream>
+#include <clocale>
 
 using namespace std;
 
 int main()
 {
-    system("chcp 1251 > nul");
+    setlocale(LC_CTYPE, "ukr");
 
     double h = 6.626e-34;       // Стала Планка 
     double m = 9.11e-31;        // Маса електрона 
